@@ -1,15 +1,16 @@
 {
-    "name": "student-restaurant-app",
+    "name": "restaurant-app",
     "version": "1.0.0",
-    "description": "A PWA for viewing student restaurants and menus",
+    "description": "A PWA for student restaurants",
     "main": "dist/main.js",
     "scripts": {
-      "build": "tsc"
+      "build": "tsc",
+      "start": "lite-server"
     },
-    "author": "",
-    "license": "ISC",
+    "dependencies": {},
     "devDependencies": {
-      "typescript": "^4.0.0"
+      "lite-server": "^2.6.1",
+      "typescript": "^4.9.4"
     }
   }
   

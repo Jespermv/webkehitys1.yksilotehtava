@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+#restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.restaurant-item {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+  margin-top: 10px;
+}
