@@ -170,3 +170,20 @@ window.fetchWeeklyMenu = fetchWeeklyMenu;
 
 // Initial fetch of restaurants when page loads
 window.onload = fetchRestaurants;
+
+// Register the service worker for offline capabilities
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("../public/service-worker.js")
+      .then((registration) => {
+        console.log(
+          "ServiceWorker registration successful with scope: ",
+          registration.scope
+        );
+      })
+      .catch((error) => {
+        console.log("ServiceWorker registration failed: ", error);
+      });
+  });
+}

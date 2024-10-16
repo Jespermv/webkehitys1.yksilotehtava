@@ -1,11 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #E6F5F6; /* Light Cyan */
+  color: #06283D; /* Dark Teal */
 }
 
 h1 {
   text-align: center;
+  color: #47A9AF; /* Accent Cyan */
 }
 
 #restaurant-list {
@@ -15,15 +16,35 @@ h1 {
 }
 
 .restaurant-item {
-  background: white;
-  border: 1px solid #ccc;
+  background: #FFF; /* White */
+  border: 1px solid #C4DFE6; /* Light Border */
   border-radius: 5px;
   margin: 10px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 40, 60, 0.1); /* Slight shadow with teal tint */
 }
 
 button {
   margin-top: 10px;
+  background-color: #47A9AF; /* Accent Cyan */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #06283D; /* Darker Teal for hover */
+}
+
+.menu-container {
+  background-color: #E6F5F6; /* Light Cyan for menu sections */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h4, h5 {
+  color: #06283D; /* Darker Teal */
 }
