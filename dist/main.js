@@ -169,7 +169,23 @@ window.fetchDailyMenu = fetchDailyMenu;
 window.fetchWeeklyMenu = fetchWeeklyMenu;
 
 // Initial fetch of restaurants when page loads
-window.onload = fetchRestaurants;
+// Theme toggle function
+// Theme toggle function
+function toggleTheme() {
+  document.body.classList.toggle("dark-theme");
+}
+
+// Assign the theme toggle function to the button
+window.onload = () => {
+  fetchRestaurants(); // Fetch restaurants on load
+
+  const themeToggleButton = document.getElementById("theme-toggle");
+  if (themeToggleButton) {
+    themeToggleButton.addEventListener("click", toggleTheme);
+  } else {
+    console.error("Theme toggle button not found");
+  }
+};
 
 // Register the service worker for offline capabilities
 if ("serviceWorker" in navigator) {

@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #E6F5F6; /* Light Cyan */
   color: #06283D; /* Dark Teal */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 h1 {
@@ -27,16 +28,17 @@ h1 {
 
 button {
   margin-top: 10px;
-  background-color: #47A9AF; /* Accent Cyan */
+  background-color: #FFA500;
   color: white;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
 }
 
 button:hover {
-  background-color: #06283D; /* Darker Teal for hover */
+  background-color: #FF8C00; /* Darker Teal for hover */
 }
 
 .menu-container {
@@ -46,5 +48,35 @@ button:hover {
 }
 
 h4, h5 {
-  color: #06283D; /* Darker Teal */
+  color: #47A9AF; /* Darker Teal */
 }
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #1A1A1A; /* Dark Gray */
+  color: #E6E6E6; /* Light Gray */
+}
+
+body.dark-theme h1 {
+  color: #47A9AF; /* Keep accent color for the title */
+}
+
+
+
+body.dark-theme .restaurant-item {
+  background: #2A2A2A; /* Darker background for restaurant items */
+  border: 1px solid #444; /* Dark border */
+}
+
+body.dark-theme button {
+  background-color: #FF8C00; /* Orange for dark theme buttons */
+}
+
+body.dark-theme button:hover {
+  background-color: #FFA500; /* Lighter orange on hover */
+}
+
+body.dark-theme .menu-container {
+  background-color: #181717; /* Darker background for menu sections */
+}
+
